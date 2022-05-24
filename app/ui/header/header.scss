@@ -1,0 +1,58 @@
+@import '~theme.scss';
+
+header.site-header {
+    width: 100%;
+    color: $white;
+    background-color: $black;
+    background-image: url('/starry-sky-dark.jpg');
+    background-size: cover;
+    background-position: center center;
+    z-index: 100000;
+    padding: 5px 0 10px 20px;
+
+    &.inverted {
+        color: $blue;
+
+    }
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        justify-content: flex-end;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .header-nav {
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+    }
+
+    menu.site-social-nav {
+        display: block;
+        margin: 0 20px;
+        min-width: 120px;
+        padding: 0;
+
+        a {
+            border: none;
+        }
+    }
+
+    .header-nav .site-nav {
+        padding-left: 0;
+        padding: 0;
+        margin: 0;
+    }
+}

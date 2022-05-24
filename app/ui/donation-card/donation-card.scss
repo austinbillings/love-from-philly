@@ -1,0 +1,145 @@
+@import '~theme.scss';
+
+.donation-card {
+  display: flex;
+  flex-direction: column;
+
+  .donation-card-inner {
+    display: flex;
+    min-height: 700px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .donation-photo {
+      flex: 2 0 60%;
+      min-height: 300px;
+      background-size: cover;
+    }
+
+    .donation-content {
+      flex: 1 0 40%;
+      min-width: 320px;
+      background-color: #181919;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      a {
+        text-decoration: underline;
+      }
+
+      .donation-text, .donation-  {
+        padding: 0 30px;
+
+        @media (max-width: 768px) {
+          padding: 0 15px;
+        }
+      }
+
+      .donation-title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        max-width: 90%;
+        align-self: stretch;
+        font-size: 50px;
+        max-width: 90%;
+        line-height: 1.15em;
+        letter-spacing: -3px;
+
+        small {
+          font-weight: 100;
+          display: block;
+          color: $blue;
+        }
+
+        &.donation-title-small {
+          font-size: 40px;
+          letter-spacing: -2px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 40px;
+          letter-spacing: -2px;
+
+          &.donation-title-small {
+            font-size: 25px;
+            letter-spacing: -1px;
+          }
+        }
+      }
+
+      .donation-text {
+        flex: 1;
+        font-weight: 300;
+
+        p {
+          max-width: 90%;
+        }
+      }
+
+      .donation-cta {
+        .donation-text {
+          text-align: right;
+
+          p {
+            font-weight: 200;
+            color: rgb(97, 97, 97);
+            max-width: none;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            &:last-child {
+              margin-bottom: 10px;
+            }
+
+            small {
+              // opacity: 0.8;
+            }
+          }
+
+          big {
+            font-size: 2.5em;
+            color: rgb(198, 198, 198);
+
+            .ak-icon {
+              margin-left: 5px;
+            }
+          }
+
+          @media (max-width: 768px) {
+            text-align: center;
+
+            big {
+              font-size: 1.6em;
+            }
+          }
+        }
+
+        button {
+          font-weight: 100;
+          background-color: #0994d7;
+          max-width: 100%;
+          box-sizing: border-box;
+
+          &:hover {
+            background-color: darken(#0994d7, 10%);
+            transform: none;
+          }
+
+          .ak-icon {
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 5px 8px;
+          }
+
+          .icon-right { margin-left: 20px; margin-right: -20px; }
+          .icon-left { margin-right: 20px; margin-left: -20px; }
+        }
+      }
+    }
+  }
+}

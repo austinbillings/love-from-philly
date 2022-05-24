@@ -1,0 +1,32 @@
+@import '~theme.scss';
+
+footer.site-footer {
+    display: flex;
+    color: $white;
+    background-color: $med-dark-grey;
+
+    .site-footer--content {
+        display: flex;
+        width: 1190px;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
+
+        .site-footer--brand {
+            text-align: center;
+        }
+    }
+
+    .site-footer--legal {
+        @extend .text-small;
+        @extend .text-medium;
+        @extend .text-muted;
+    }
+}

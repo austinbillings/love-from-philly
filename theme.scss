@@ -1,0 +1,215 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500i,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;900&display=swap');
+
+@import url('/fonts/kelson/k.css');
+
+$font-primary: 'Inter', 'Inter UI', 'Helvetica Neue', 'Geneva', 'Helvetica', sans-serif;
+.font-primary { font-family: $font-primary; }
+$font-heading: 'Kelson', 'Univers', $font-primary;
+.font-heading { font-family: $font-heading; }
+$font-alternate: 'Mont', 'Avenir', 'Gill Sans', 'Century Gothic', $font-primary;
+.font-alternate { font-family: $font-alternate; }
+$font-monospace: 'Monaco', 'Menlo', 'Consolas', monospace;
+.font-monospace { font-family: $font-monospace; }
+// App Sizings
+$navbar-height: 3.5em;
+$sidebar-width: 240px;
+// Auth Sizings
+$auth-container-height: 265px;
+$auth-corner-radius: 10px;
+$auth-leftside-width: 300px;
+$auth-rightside-width: 500px;
+// Named Colors
+$white: #ffffff; // _white
+$off-white: #f2f0f0; // white smoke
+$bright-red: #ff2677; //
+$red: #d62929; //
+$blue: #05a4db; //
+$dark-blue: #0579a2; //
+$gold: #feb100; //
+$teal: #0dc9bb; //
+$green: #6dad1a; //
+$light-grey: #c4c4c4;
+$med-light-grey: #a2a2a2;
+$med-dark-grey: #353535; //
+$dark-grey: #343535; // outer space
+$darker-grey: #212021; // outer space
+$black: #121318; // swamp
+$dark-black: #0c0c0c; // _black
+$named-colors: (
+  "white": $white,
+  "bright-red": $bright-red,
+  "red": $red,
+  "blue": $blue,
+  "dark-blue": $dark-blue,
+  "gold": $gold,
+  "teal": $teal,
+  "green": $green,
+  "light-grey": $light-grey,
+  "med-light-grey": $med-light-grey,
+  "med-dark-grey": $med-dark-grey,
+  "dark-grey": $dark-grey,
+  "darker-grey": $darker-grey,
+  "black": $black,
+  "dark-black": $dark-black
+);
+// App colors
+$main-text-color: $black;
+$main-background-color: $off-white;
+$main-border-color: $med-dark-grey;
+// Contextual colors
+$subtle: $med-dark-grey;
+$muted: $light-grey;
+$success: $green;
+$calm: $blue;
+$warning: $gold;
+$plain: $white;
+$inverted: $black;
+$danger: darken($red, 10%);
+$primary: $blue;
+$primary-dark: $dark-blue;
+$primary-bright: lighten($blue, 10%);
+$secondary: $teal;
+$contextual-colors: (
+  "subtle": $subtle,
+  "muted": $muted,
+  "success": $success,
+  "calm": $calm,
+  "warning": $warning,
+  "plain": $plain,
+  "inverted": $inverted,
+  "danger": $danger,
+  "primary": $primary,
+  "primary-bright": $primary-bright,
+  "secondary": $secondary,
+);
+// Button styles
+
+$button-flavors: (
+    "normal": (accent: $dark-grey),
+    "primary": (accent: $primary),
+    "primary-dark": (accent: $primary-dark),
+    "secondary": (accent: $secondary),
+    "calm": (accent: $calm),
+    "warning": (accent: $warning, text-color: $dark-grey),
+    "success": (accent: $success, text-color: $dark-grey),
+    "danger": (accent: $danger),
+    "muted": (accent: $muted, text-color: #777),
+    "subtle": (accent: $subtle, text-color: $muted),
+    "ghost": (accent: transparent, text-color: $white),
+    "clear": (accent: transparent, text-color: $med-light-grey, use-border: true)
+);
+
+
+
+// Invoke
+@import '~arkade/theme';
+
+a {
+  text-decoration: none;
+}
+
+b {
+    font-weight: 700;
+}
+
+body {
+    font-size: 16px;
+}
+
+output.ak-validation-message {
+    align-self: center;
+}
+
+*:focus {
+    outline: 2px solid $blue;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.full {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-heading;
+}
+
+.ak-fieldset .ak-field {
+    .ak-field-label {
+        font-size: 12px;
+        font-weight: 800;
+        opacity: 0.6;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .ak-field-content {
+        font-size: 14px;
+        border-color: #555;
+        border-radius: 8px;
+
+        input {
+            color: $white;
+            background-color: transparent;
+            font-family: $font-monospace;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+    }
+}
+
+a.ak-social-icon {
+    display: inline-flex;
+    padding: 0.3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    // border-radius: 50%;
+    border-radius: 4px;
+    background-color: currentColor;
+    border: 1px solid $black;
+    margin-right: 10px;
+    transition: all 0.4s;
+    line-height: 1em;
+
+    @media (max-width: 1220px) {
+        width: 1.6em;
+        height: 1.6em;
+        font-size: 0.8em;
+    }
+
+    .ak-icon {
+        color: $black;
+        position: relative;
+        top: 0.5px;
+    }
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+a { color: $primary; }
+
+button {
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+
+// NIGHT FX
+
