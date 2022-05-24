@@ -6,7 +6,7 @@
     "reveal": "which next",
     "dev": "next dev -- -p 2022",
     "start": "next start -- -p 2022",
-    "build": "npm run sync && next build"
+    "build": "next build"
   },
   "dependencies": {
     "@paypal/paypal-js": "^4.1.0",
@@ -25,7 +25,7 @@
     "next": "^9.1.4",
     "next-transpile-modules": "^3.0.2",
     "node-sass": "^4.13.0",
-    "react": "^16.12.0",
+    "react": "^16.14.0",
     "react-dom": "^16.12.0",
     "react-ga": "^2.7.0",
     "trolley": "^1.0.2",
