@@ -8,7 +8,7 @@ export const Footer = ({}) => {
     return (
         <footer className="site-footer">
             <div className="site-footer--content">
-                <section className="site-footer--brand">
+                <section className="site-footer--brand" style={{ flex: '100%' }}>
                     <a href="https://30amp.org">
                         <img
                             alt="30 Amp Circuit logo"

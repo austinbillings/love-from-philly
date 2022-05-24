@@ -51,22 +51,23 @@ const LoveFromPhillyView = ({ }) => {
     return (
         <MainLayout background="sherbert">
             <Night />
-            <div className="stack items-center justify-center text-white pad-30 pad-bottom-30 margin-bottom-30" style={{ minHeight: '70vh', zIndex: 200 }}>
-                <span className="text-engraved text-small text-white margin-bottom-10 text-center" style={{ fontWeight: 500, opacity: 1 }}>
-                    30 AMP CIRCUIT IS PROUD TO ANNOUNCE
-                </span>
+            <div className="stack">
+                <div className="stack items-center justify-start text-white pad-30 pad-bottom-30" style={{ zIndex: 200 }}>
+                    <span className="text-engraved text-small text-white margin-bottom-10 text-center" style={{ fontWeight: 500, opacity: 1 }}>
+                        30 AMP CIRCUIT IS PROUD TO ANNOUNCE
+                    </span>
 
-                <div className="row items-center">
-                    <img src="/LFP-EditedLogo-01.png" style={{ maxWidth: '90vw', width: '500px' }} />
+                    <div className="row items-center">
+                        <img src="/LFP-EditedLogo-01.png" style={{ maxWidth: '90vw', width: '500px' }} />
+                    </div>
+                    <h1 className="text-thin" style={{ padding: 0, margin: 0, marginBottom: 5, fontSize: 'calc(20px + 5vw)', textShadow: '0 0 50px rgba(255,20,30,0.9), 0 10px 30px rgba(255,12,13,0.3), 0 0 50px rgba(100,100,100,0.9)' }}>2022</h1>
                 </div>
-
-                <h1 className="text-thin" style={{ padding: 0, margin: 0, marginBottom: 5, fontSize: '10vh', textShadow: '0 0 50px rgba(255,20,30,0.9), 0 10px 30px rgba(255,12,13,0.3), 0 0 50px rgba(100,100,100,0.9)' }}>2022</h1>
-            </div>
-            <div ariaHidden={true} className="row justify-center" style={{ position: 'relative', zIndex: -1 }}>
-                <div className="background-black self-stretch grow-1" style={{ borderTopRightRadius: '3vh', borderTop: '1px solid #05a4db', borderRight: '1px solid #d62929' }}> </div>
-                <img src={'/2022/skyline.png'} style={{ width: 992, maxWidth: '100%', margin: '0 auto 0px', flex: '0 1 992px' }}/>
-                <img src="/2022/ben-june.png" style={{ width: 'auto', height: 'auto', maxHeight: '40vh', maxWidth: '80vw', bottom: '0', position: 'absolute'  }}/>
-                <div className="background-black self-stretch grow-1" style={{ borderTopLeftRadius: '3vh', borderTop: '1px solid #05a4db', borderLeft: '1px solid #d62929' }}> </div>
+                <div ariaHidden={true} className="row justify-center" style={{ width: '100%', flexWrap: 'nowrap', height: '40vh', position: 'relative', zIndex: -1 }}>
+                    <div className="background-black self-stretch grow-1" style={{ borderTopRightRadius: '3vh', borderTop: '1px solid #05a4db', borderRight: '1px solid #d62929' }}> </div>
+                    <img src={'/2022/skyline.png'} style={{ width: 992, margin: '0 auto 0px', flex: '0 1 992px' }}/>
+                    <img src="/2022/ben-june.png" style={{ width: 'auto', height: '100%', maxHeight: '60vh', maxWidth: '100vw', top: '0', position: 'absolute'  }}/>
+                    <div className="background-black self-stretch grow-1" style={{ borderTopLeftRadius: '3vh', borderTop: '1px solid #05a4db', borderLeft: '1px solid #d62929' }}> </div>
+                </div>
             </div>
             <div className="background-black text-white text-center pad-15">
                 <h1 className="text-upper" style={{lineHeight:'1em'}}>Saturday, <nobr>June 11<sup>th</sup></nobr></h1>
@@ -92,13 +93,6 @@ const LoveFromPhillyView = ({ }) => {
             <div className="background-sherbert">
                 <h3 className="text-center text-upper text-white margin-vertical-30">Featuring</h3>
                 <div className="stack text-upper text-center font-heading text-bold pad-bottom-30">
-
-
-
-
-
-
-
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.5vw)' }}>Rich Medina • Cosmo Baker</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.6vw)' }}>West Philly Orchestra</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.4vw)' }}>Worldtown • <small>The</small> Ultimates • <small>The</small> Del Rons</nobr>
