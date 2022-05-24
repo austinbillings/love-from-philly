@@ -76,8 +76,6 @@ const LoveFromPhillyView = ({ }) => {
                 <h4 className="text-gold text-light margin-bottom-30 pad-0">
                     A full day of arts, music and Philadelphian culture
                 </h4>
-                <p style={{ textAlign: 'center', maxWidth: 550, fontWeight: 300, margin: '20px auto', width: '90%' }}>This event is the crown jewel of the two week <b>Love from Philly</b> event that will take place city-wide the first two weeks of May bringing together our eclectic arts world with our dynamic tech world to create an annual event that will redefine our city’s cultural legacy. </p>
-
                 <div className="stack items-center margin-bottom-50">
                     {aspects.map(aspect => (
                         <div className="row items-center margin-vertical-20" style={{ width: '100%', maxWidth: '800px', flexWrap: 'nowrap' }}>
@@ -97,7 +95,7 @@ const LoveFromPhillyView = ({ }) => {
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.6vw)' }}>West Philly Orchestra</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.4vw)' }}>Worldtown • <small>The</small> Ultimates • <small>The</small> Del Rons</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.8vw)' }}>Gospel Music Preservation Alliance</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Tissburys • Schooly D • Willis</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Tisburys • Schooly D • Wallis</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.7vw)' }}>Baby Loves Disco</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2vw)' }}>Philly School District Jazz All-Stars </nobr>
                     {/* <nobr style={{ lineHeight: '1.2em', fontSize: 'calc(8px + 2.4vw)' }}>DARLA • WE HOPE GOSPEL CHOIR</nobr>
