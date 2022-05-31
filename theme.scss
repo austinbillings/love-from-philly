@@ -98,7 +98,8 @@ $button-flavors: (
     "muted": (accent: $muted, text-color: #777),
     "subtle": (accent: $subtle, text-color: $muted),
     "ghost": (accent: transparent, text-color: $white),
-    "clear": (accent: transparent, text-color: $med-light-grey, use-border: true)
+    "clear": (accent: transparent, text-color: $med-light-grey, use-border: true),
+    "dark": (accent: black, text-color: white)
 );
 
 
@@ -204,6 +205,10 @@ a { color: $primary; }
 
 button {
     transition: all 0.4s;
+
+    &.btn.btn-wide {
+      min-width: 300px;
+    }
 
     &:hover {
         transform: scale(1.03);

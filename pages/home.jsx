@@ -51,6 +51,14 @@ const LoveFromPhillyView = ({ }) => {
     return (
         <MainLayout background="sherbert">
             <Night />
+            <div style={{ float: 'right', display: 'flex', flexDirection: 'column', position: 'fixed', zIndex: 10000000, right: 10, top: 5, textAlign: 'center' }}>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=VJ7NMK5K4XCQW" target="_blank">
+                    <button className="btn btn-primary" style={{ border: '2px solid white' }}>
+                        <span>Donate Now via PayPal</span> <Icon fa="lock" />
+                    </button>
+                </a>
+                <span class="text-small text-bold clickable" style={{ textShadow: '1px 1px 0 white' }} onClick={() => window.scrollTo({ top: document.getElementById('about_tac').offsetTop, behavior: 'smooth' })}>Learn more</span>
+            </div>
             <div className="stack">
                 <div className="stack items-center justify-start text-white pad-30 pad-bottom-30" style={{ zIndex: 200 }}>
                     <span className="text-engraved text-small text-white margin-bottom-10 text-center" style={{ fontWeight: 500, opacity: 1 }}>
@@ -72,7 +80,7 @@ const LoveFromPhillyView = ({ }) => {
             <div className="background-black text-white text-center pad-15">
                 <h1 className="text-upper" style={{lineHeight:'1em'}}>Saturday, <nobr>June 11<sup>th</sup></nobr></h1>
                 <h3 className="text-upper pad-top-0" style={{lineHeight:'1em'}}>FREE at the Ben Franklin Parkway</h3>
-                <h3 className="text-upper pad-top-0 text-primary" style={{lineHeight:'1em'}}>12:00 <small>PM</small> - 8:00 <small>PM</small></h3>
+                <h3 className="text-upper pad-top-0 text-primary" style={{lineHeight:'1em'}}>12:00 <small>PM</small> - 10:00 <small>PM</small></h3>
                 <h4 className="text-gold text-light margin-bottom-30 pad-0">
                     A full day of arts, music and Philadelphian culture
                 </h4>
@@ -96,6 +104,7 @@ const LoveFromPhillyView = ({ }) => {
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.4vw)' }}>Worldtown • <small>The</small> Ultimates • <small>The</small> Del Rons</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.8vw)' }}>Gospel Music Preservation Alliance</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Tisburys • Schooly D • Wallis</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Jamaaladeen Tacuma Trio</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.7vw)' }}>Baby Loves Disco</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2vw)' }}>Philly School District Jazz All-Stars </nobr>
                     {/* <nobr style={{ lineHeight: '1.2em', fontSize: 'calc(8px + 2.4vw)' }}>DARLA • WE HOPE GOSPEL CHOIR</nobr>
@@ -117,6 +126,17 @@ const LoveFromPhillyView = ({ }) => {
                 </div>
             </div>
 
+            <div className="background-white text-black text-center stack pad-vertical-40" id="about_tac" style={{ position: 'relative', zIndex: 10000001 }}>
+                <img src="/logo-black.png" style={{ width: 500, maxWidth: '90vw', alignSelf: 'center', marginBottom: 30 }} />
+                <p style={{ width: 750, maxWidth: '95%', margin: '0 auto 30px' }}><b>Love From Philly</b> is an annual event planned, executed, and hosted by your friends at <b><a href="https://www.30amp.org">30 Amp Circuit</a>, which is a Philly-based non-profit formed in 2018 as a Pennsylvania 501c3 dedicated to the health, wellness, and professional needs of musicians and artists of all mediums.</b></p>
+                <p style={{ width: 750, maxWidth: '95%', margin: '0 auto 30px' }}>We welcome every tax-exempt donation to 30 Amp Circuit, which allow us to continue putting on these community-centric events and delivering much-needed health assistance and resources to Philadelphia-based musicians and artists of all kinds. We exist exclusively on donations from people like you and every penny counts. We thank you for your support.</p>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=VJ7NMK5K4XCQW" target="_blank">
+                    <button className="btn btn-wide btn-dark">
+                        <span>Donate Now via PayPal</span> <Icon fa="lock" />
+                    </button>
+                </a>
+            </div>
+
             <div className="background-black text-white text-center stack pad-vertical-30">
                 <div className="row justify-center items-center">
                     <div className="stack pad-30">
@@ -127,7 +147,7 @@ const LoveFromPhillyView = ({ }) => {
                     <div className="stack text-left pad-20 margin-bottom-20 items-stretch" style={{maxWidth: '100vw'}}>
                         <h1 className="text-upper" style={{lineHeight:'1em'}}>Saturday, <nobr>June 11<sup>th</sup></nobr></h1>
                         <h3 className="text-upper pad-top-0" style={{lineHeight:'1em'}}>FREE at Ben Franklin Parkway</h3>
-                        <h3 className="text-upper pad-top-0 text-gold" style={{lineHeight:'1em'}}>12:00 <small>PM</small> - 8:00 <small>PM</small></h3>
+                        <h3 className="text-upper pad-top-0 text-gold" style={{lineHeight:'1em'}}>12:00 <small>PM</small> - 10:00 <small>PM</small></h3>
                         <h4 className="text-primary text-light margin-bottom-30 pad-0">
                             A full day of arts, music and Philadelphian culture
                         </h4>
