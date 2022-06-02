@@ -51,28 +51,31 @@ const LoveFromPhillyView = ({ }) => {
     return (
         <MainLayout background="sherbert">
             <Night />
-            <div style={{ float: 'right', display: 'flex', flexDirection: 'column', position: 'fixed', zIndex: 10000000, right: 10, top: 5, textAlign: 'center' }}>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=VJ7NMK5K4XCQW" target="_blank">
-                    <button className="btn btn-primary" style={{ border: '2px solid white' }}>
-                        <span>Donate Now via PayPal</span> <Icon fa="lock" />
-                    </button>
-                </a>
-                <span class="text-small text-bold clickable" style={{ textShadow: '1px 1px 0 white' }} onClick={() => window.scrollTo({ top: document.getElementById('about_tac').offsetTop, behavior: 'smooth' })}>Learn more</span>
+            <div className="_sm-hide">
+                <div style={{ float: 'right', display: 'flex', flexDirection: 'column', position: 'fixed', zIndex: 10000000, right: 10, top: 5, textAlign: 'center' }}>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=VJ7NMK5K4XCQW" target="_blank">
+                        <button className="btn btn-primary" style={{ border: '2px solid white' }}>
+                            <span>Donate Now via PayPal</span> <Icon fa="lock" />
+                        </button>
+                    </a>
+                    <span class="text-small text-bold clickable" style={{ textShadow: '1px 1px 0 white' }} onClick={() => window.scrollTo({ top: document.getElementById('about_tac').offsetTop, behavior: 'smooth' })}>Learn more</span>
+                </div>
             </div>
-            <div className="stack">
-                <div className="stack items-center justify-start text-white pad-30 pad-bottom-30" style={{ zIndex: 200 }}>
+            <div className="stack" style={{ maxWidth: '100%' }}>
+                <div className="stack items-center justify-start text-white pad-10 pad-bottom-30" style={{ zIndex: 200, maxWidth: '100%' }}>
                     <span className="text-engraved text-small text-white margin-bottom-10 text-center" style={{ fontWeight: 500, opacity: 1 }}>
-                        30 AMP CIRCUIT IS PROUD TO ANNOUNCE
+                        30 AMP CIRCUIT IS <br className="md_-hide" /> PROUD TO ANNOUNCE
                     </span>
 
                     <div className="row items-center">
-                        <img src="/LFP-EditedLogo-01.png" style={{ maxWidth: '90vw', width: '500px' }} />
+                        <img src="/LFP-EditedLogo-01.png" style={{ maxWidth: 'calc(100vw - 50px)', width: '500px', margin: '0 auto' }} />
                     </div>
                     <h1 className="text-thin" style={{ padding: 0, margin: 0, marginBottom: 5, fontSize: 'calc(20px + 5vw)', textShadow: '0 0 50px rgba(255,20,30,0.9), 0 10px 30px rgba(255,12,13,0.3), 0 0 50px rgba(100,100,100,0.9)' }}>2022</h1>
+                    <div className="marquee" style={{ marginTop: 20, marginBottom: -20, marginLeft: -20, marginRight: -20 }}><p><img src="/2022/screening.png" style={{ maxWidth: '150vw' }} /></p></div>
                 </div>
                 <div ariaHidden={true} className="row justify-center" style={{ width: '100%', flexWrap: 'nowrap', height: '40vh', position: 'relative', zIndex: -1 }}>
                     <div className="background-black self-stretch grow-1" style={{ borderTopRightRadius: '3vh', borderTop: '1px solid #05a4db', borderRight: '1px solid #d62929' }}> </div>
-                    <img src={'/2022/skyline.png'} style={{ width: 992, margin: '0 auto 0px', flex: '0 1 992px' }}/>
+                    <img src={'/2022/skyline.png'} style={{ width: '100%',  margin: '0 auto 0px', flex: '0 1 992px' }}/>
                     <img src="/2022/ben-june.png" style={{ width: 'auto', height: '100%', maxHeight: '60vh', maxWidth: '100vw', top: '0', position: 'absolute'  }}/>
                     <div className="background-black self-stretch grow-1" style={{ borderTopLeftRadius: '3vh', borderTop: '1px solid #05a4db', borderLeft: '1px solid #d62929' }}> </div>
                 </div>
@@ -100,13 +103,14 @@ const LoveFromPhillyView = ({ }) => {
                 <h3 className="text-center text-upper text-white margin-vertical-30">Featuring</h3>
                 <div className="stack text-upper text-center font-heading text-bold pad-bottom-30">
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.5vw)' }}>Rich Medina • Cosmo Baker</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.5vw)' }}>Schoolly D • <small>The</small> Ultimates</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.6vw)' }}>West Philly Orchestra</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.4vw)' }}>Worldtown • <small>The</small> Ultimates • <small>The</small> Del Rons</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.8vw)' }}>Gospel Music Preservation Alliance</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Tisburys • Schooly D • Wallis</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.1vw)' }}>Worldtown • <small>The</small> Del Rons</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.4vw)', letterSpacing: '-0.1vw' }}>Gospel Music Preservation Alliance</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Jamaaladeen Tacuma Trio</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.7vw)' }}>Baby Loves Disco</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.96vw)' }}>The Tisburys • Wallis</nobr>
                     <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2vw)' }}>Philly School District Jazz All-Stars </nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.7vw)' }}>Baby Loves Disco</nobr>
                     {/* <nobr style={{ lineHeight: '1.2em', fontSize: 'calc(8px + 2.4vw)' }}>DARLA • WE HOPE GOSPEL CHOIR</nobr>
                     <nobr style={{ lineHeight: '1.2em', fontSize: 'calc(8px + 2.33vw)' }}>KUF KNOTZ and CHRISTINE ELISE</nobr>
                     <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(8px + 2vw)' }}>BABY LOVES DISCO</nobr> */}
@@ -119,7 +123,7 @@ const LoveFromPhillyView = ({ }) => {
                 </div> */}
                 <div className="stack font-heading text-bold text-center margin-bottom-30" style={{ paddingBottom: '10vh' }}>
                     <h3 className="text-center text-upper text-white margin-top-30">PLUS</h3>
-                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Philladelphia Independent Film Festival Screenings </nobr>
+                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Philladelphia Independent <span className="md_-hide"><br/></span> Film Festival Screenings </nobr>
                     <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Food Trucks • Beer Garden </nobr>
                     <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Farm to Table Philly Art Marketplace</nobr>
                     <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>+ Philly Tech Week <span className="text-regular">plugging it all in</span></nobr>
@@ -127,9 +131,9 @@ const LoveFromPhillyView = ({ }) => {
             </div>
 
             <div className="background-white text-black text-center stack pad-vertical-40" id="about_tac" style={{ position: 'relative', zIndex: 10000001 }}>
-                <img src="/logo-black.png" style={{ width: 500, maxWidth: '90vw', alignSelf: 'center', marginBottom: 30 }} />
-                <p style={{ width: 750, maxWidth: '95%', margin: '0 auto 30px' }}><b>Love From Philly</b> is an annual event planned, executed, and hosted by your friends at <b><a href="https://www.30amp.org">30 Amp Circuit</a>, which is a Philly-based non-profit formed in 2018 as a Pennsylvania 501c3 dedicated to the health, wellness, and professional needs of musicians and artists of all mediums.</b></p>
-                <p style={{ width: 750, maxWidth: '95%', margin: '0 auto 30px' }}>We welcome every tax-exempt donation to 30 Amp Circuit, which allow us to continue putting on these community-centric events and delivering much-needed health assistance and resources to Philadelphia-based musicians and artists of all kinds. We exist exclusively on donations from people like you and every penny counts. We thank you for your support.</p>
+                <img src="/logo_combined.png" style={{ width: 1000, maxWidth: '90vw', alignSelf: 'center', marginBottom: 30 }} />
+                <p style={{ width: 850, lineHeight: '1.5em', maxWidth: '95%', margin: '0 auto 30px' }}><b>Love From Philly</b> is an annual event planned, executed, and hosted by your friends at <b><a href="https://www.30amp.org">30 Amp Circuit</a>, which is a Philly-based non-profit formed in 2018 as a Pennsylvania 501c3 dedicated to the health, wellness, and professional needs of musicians and artists of all mediums.</b></p>
+                <p style={{ width: 850, lineHeight: '1.5em', maxWidth: '95%', margin: '0 auto 30px' }}>We welcome every tax-exempt donation to 30 Amp Circuit, which allow us to continue putting on these community-centric events and delivering much-needed health assistance and resources to Philadelphia-based musicians and artists of all kinds. We exist exclusively on donations from people like you and every penny counts. We thank you for your support.</p>
                 <a href="https://www.paypal.com/donate/?hosted_button_id=VJ7NMK5K4XCQW" target="_blank">
                     <button className="btn btn-wide btn-dark">
                         <span>Donate Now via PayPal</span> <Icon fa="lock" />
