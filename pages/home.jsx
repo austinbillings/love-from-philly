@@ -58,7 +58,7 @@ const LoveFromPhillyView = ({ }) => {
                             <span>Donate Now via PayPal</span> <Icon fa="lock" />
                         </button>
                     </a>
-                    <span class="text-small text-bold clickable" style={{ textShadow: '1px 1px 0 white' }} onClick={() => window.scrollTo({ top: document.getElementById('about_tac').offsetTop, behavior: 'smooth' })}>Learn more</span>
+                    <span className="text-small text-bold clickable" style={{ textShadow: '1px 1px 0 white' }} onClick={() => window.scrollTo({ top: document.getElementById('about_tac').offsetTop, behavior: 'smooth' })}>Learn more</span>
                 </div>
             </div>
             <div className="stack" style={{ maxWidth: '100%' }}>
@@ -102,19 +102,18 @@ const LoveFromPhillyView = ({ }) => {
             <div className="background-sherbert">
                 <h3 className="text-center text-upper text-white margin-vertical-30">Featuring</h3>
                 <div className="stack text-upper text-center font-heading text-bold pad-bottom-30">
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.5vw)' }}>Rich Medina • Cosmo Baker</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.5vw)' }}>Schoolly D • <small>The</small> Ultimates</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.6vw)' }}>West Philly Orchestra</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 3.1vw)' }}>Worldtown • <small>The</small> Del Rons</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.4vw)', letterSpacing: '-0.1vw' }}>Gospel Music Preservation Alliance</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.66vw)' }}>The Jamaaladeen Tacuma Trio</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.96vw)' }}>The Tisburys • Wallis</nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2vw)' }}>Philly School District Jazz All-Stars </nobr>
-                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(8px + 2.7vw)' }}>Baby Loves Disco</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 4.5vw)' }}>Rich Medina • Cosmo Baker</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 3.5vw)' }}>Schoolly D • West Philly Orchestra </nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 3.1vw)', letterSpacing: -1 }}><small>the</small> Del Rons • <small>The</small> Tisburys • DJ Ben Arsenal</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 3.1vw)', letterSpacing: -1 }}><small>The</small> Ultimates • Worldtown Soundsystem</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 3.1vw)' }}>Lauren Hart • Orchestra del Barrio</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 2.66vw)' }}>The Jamaaladeen Tacuma Trio  • Wallis</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 2.4vw)', letterSpacing: '-0.1vw' }}>Gospel Music Preservation Alliance</nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 2vw)' }}>Philly School District Jazz All-Stars </nobr>
+                    <nobr style={{ lineHeight: '1.1em', fontSize: 'calc(7px + 2.7vw)' }}>All City Drumline • Baby Loves Disco</nobr>
                     {/* <nobr style={{ lineHeight: '1.2em', fontSize: 'calc(8px + 2.4vw)' }}>DARLA • WE HOPE GOSPEL CHOIR</nobr>
                     <nobr style={{ lineHeight: '1.2em', fontSize: 'calc(8px + 2.33vw)' }}>KUF KNOTZ and CHRISTINE ELISE</nobr>
                     <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(8px + 2vw)' }}>BABY LOVES DISCO</nobr> */}
-                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(8px + 0.66vw)' }}>+ MANY MORE TBA</nobr>
                 </div>
 
                 {/* <div className="stack font-heading text-bold text-center margin-vertical-30">
@@ -123,11 +122,15 @@ const LoveFromPhillyView = ({ }) => {
                 </div> */}
                 <div className="stack font-heading text-bold text-center margin-bottom-30" style={{ paddingBottom: '10vh' }}>
                     <h3 className="text-center text-upper text-white margin-top-30">PLUS</h3>
-                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Philladelphia Independent <span className="md_-hide"><br/></span> Film Festival Screenings </nobr>
-                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Food Trucks • Beer Garden </nobr>
-                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>Farm to Table Philly Art Marketplace</nobr>
-                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1vw)' }}>+ Philly Tech Week <span className="text-regular">plugging it all in</span></nobr>
+                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1.4vw)' }}>Philladelphia Independent <span className="md_-hide"><br/></span> Film Festival Screenings </nobr>
+                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 2vw)' }}>Food Trucks • Beer Garden </nobr>
+                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1.6vw)' }}>Farm to Table Philly Art Marketplace</nobr>
+                    <nobr style={{ lineHeight: '1.3em', fontSize: 'calc(12px + 1.4vw)' }}>+ Philly Tech Week <span className="text-regular">plugging it all in</span></nobr>
                 </div>
+            </div>
+            <div className="background-black text-center">
+                <img src="/2022/insta-please-help.jpeg" style={{ maxWidth: '100%', margin: '0 auto' }}/>
+                <img src="/2022/summerofsoul.jpeg" style={{ maxWidth: '100%', margin: '0 auto' }}/>
             </div>
 
             <div className="background-white text-black text-center stack pad-vertical-40" id="about_tac" style={{ position: 'relative', zIndex: 10000001 }}>
